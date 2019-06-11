@@ -167,8 +167,8 @@ def convert_single_example(ex_index, example, max_seq_length_src,max_seq_length_
     for (i, label) in enumerate(label_list):
         label_map[label] = i
     """
-    tokens_a = tokenizer.tokenize(example.src_txt)
-    tokens_b = tokenizer.tokenize(example.tgt_txt)
+    tokens_a = tokenizer.tokenize(example['src_txt'])
+    tokens_b = tokenizer.tokenize(example['tgt_txt'])
 
 
     # Modifies `tokens_a` and `tokens_b` in place so that the total
