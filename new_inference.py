@@ -76,7 +76,7 @@ def infer_single_example(story,actual_summary,tokenizer):
 
 def get_results():
     story = 'This is my new story and I want the summary'
-    summary = ''
+    summary = ' '
     hwords = infer_single_example(story,summary,tokenizer)
     print(hwords)
     return hwords
