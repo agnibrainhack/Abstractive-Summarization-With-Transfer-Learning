@@ -169,8 +169,8 @@ def convert_single_example(ex_index, example, max_seq_length_src,max_seq_length_
     """
     print(ex_index, example, max_seq_length_src,max_seq_length_tgt,tokenizer)
 
-    example = {"src_txt":story,
-      "tgt_txt":actual_summary
+    example = {"src_txt":'story',
+      "tgt_txt":'actual_summary'
       }
     tokens_a = tokenizer.tokenize(example.src_txt)
     tokens_b = tokenizer.tokenize(example.tgt_txt)
